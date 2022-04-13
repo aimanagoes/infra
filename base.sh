@@ -14,4 +14,7 @@ npm install pm2 -g
 cd ~
 curl -sS https://getcomposer.org/installer -o /tmp/composer-setup.php
 sudo php /tmp/composer-setup.php --install-dir=/usr/local/bin --filename=composer
-su - ${USER}
+su - ${USER} <<!
+ModernApp!2022
+!
+./sql.sh

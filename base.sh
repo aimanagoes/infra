@@ -1,5 +1,5 @@
 #!/bin/bash
-curl <> --output sql.sh
+curl https://raw.githubusercontent.com/aimanagoes/infra/main/sql.sh --output sql.sh
 chmod +x sql.sh
 sudo apt update
 sudo apt install apt-transport-https ca-certificates curl software-properties-common php-cli unzip phpunit -y
@@ -14,3 +14,4 @@ npm install pm2 -g
 cd ~
 curl -sS https://getcomposer.org/installer -o /tmp/composer-setup.php
 sudo php /tmp/composer-setup.php --install-dir=/usr/local/bin --filename=composer
+su - ${USER}
